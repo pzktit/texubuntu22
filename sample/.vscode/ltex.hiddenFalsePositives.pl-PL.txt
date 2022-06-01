@@ -1,0 +1,3 @@
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPiotr Zawadzki Kontenery i \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QTo przykładowy dokument ilustrujący skład dokumentu w języku polskim: jeden, dwa, trzy Do powyższego wyliczenia dodajmy jeszcze wzór: \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}

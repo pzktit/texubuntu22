@@ -1,0 +1,46 @@
+{
+	"name": "TexUbuntu22",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"james-yu.latex-workshop",
+		"valentjn.vscode-ltex",
+		// Git
+		//"eamodio.gitlens",
+		// Other helpers
+		//"shardulm94.trailing-spaces",
+		//"stkb.rewrap", // rewrap comments after n characters on one line
+		// Other
+		"vscode-icons-team.vscode-icons"
+	],
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		// General settings
+		"files.eol": "\n",
+		"editor.formatOnSave": true,
+		"files.associations": {
+			"*.tex": "latex"
+		},
+		// Latex settings
+		"latex-workshop.chktex.enabled": true,
+		"latex-workshop.chktex.run": "onType",
+		"latex-workshop.chktex.delay": 1000,
+		"latex-workshop.latex.autoBuild.cleanAndRetry.enabled": false,
+		"latex-workshop.latex.build.clearLog.everyRecipeStep.enabled": false,
+		"latex-workshop.latex.build.forceRecipeUsage": false,
+		"latex-workshop.synctex.afterBuild.enabled": true,
+		"latex-workshop.view.pdf.hand": true,
+		"latex-workshop.latex.recipe.default": "lastUsed",
+		// Language settings
+		"ltex.language": "pl-PL",
+		"ltex.ltex-ls.path": "/usr"
+	},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+	// Use 'postCreateCommand' to run commands after the container is created.
+	"postCreateCommand": "uname -a",
+	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	"remoteUser": "vscode"
+}

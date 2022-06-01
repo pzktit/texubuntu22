@@ -1,0 +1,2 @@
+#!/bin/sh
+docker build  --build-arg VARIANT=ubuntu-22.04 -t pzawad/texubuntu22 .
