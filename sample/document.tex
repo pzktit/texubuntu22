@@ -9,10 +9,12 @@
 
 %\usepackage[polish]{babel}
 \usepackage{polski}
-\usepackage{lipsum}
 
+\usepackage{xspace}
 \usepackage{amsmath}
 
+\newcommand{\devc}{\textit{DevContainers}\xspace}
+\newcommand{\vsc}{\textit{VS Code}\xspace}
 
 \author{Piotr Zawadzki}
 \title{Kontenery i \LaTeX}
@@ -21,28 +23,76 @@
 
 \tableofcontents{}
 
-\section{Pierwszy}
+\section{Wprowadzenie}
 
-Witaj świecie. To przykładowy dokument ilustrujący skład dokumentu w~języku polskim:
+ąćęńóśźż
+
+ĄĆĘŃÓŚŹŻ
+
+\devc{} to zaimplementowany w \vsc{} mechanizm dynamicznego tworzenia kontenerów Docker'a zawierających narzędzia potrzebne do pracy nad danym projektem.
+W katalogu \texttt{.devcontainer} znajduje się plik
+\texttt{devcontainer.json} zawierający przepis na utworzenie i~konfigurację kontenera.
+
+\subsection{Wykorzystanie mechanizmu \devc{} do składu dokumentów}
+
+\LaTeX{} to bardzo złożony system składu dokumentów, składający się z wielu współdziałających ze sobą aplikacji.
+Instalacja systemu jest dość skomplikowana, stąd też jest on rozprowadzany w~tzw.~dystrybucjach zawierających dostrojone do siebie aplikacje, z których dwie najbardziej popularne to \TeX{}Live i Mik\TeX{}.
+Sam proces składu dokumentu bardzo przypomina kompilację programu, stąd pomysł, aby środowisko składu przygotować w~ramach mechanizmu \devc{}.
+
+\subsection{Dwa}
+
+Niniejszy projekt jest praktyczną realizacją pomysłu.
+Do składu wykorzystywany jest kontener zbudowany na bazie \textsc{Ubuntu 22.04} (dystrybucja \TeX{}Live z 2021).
+
+\section{Skład dokumentu}
+
+Zapraszam do wypróbowania działania osiągniętego w ten sposób systemu składu.
+Dokument źródłowy wprowadzamy w \vsc{}.
+W procesie składu na jego podstawie generowany jest plik PDF, który można wyświetlić w oknie podglądu.
+\begin{align}
+  a & = 4+2x+\sin(y)         \\
+  b & = 28 -3 x + \cos\alpha
+\end{align}
+
+Tu mamy listę wyliczaną
 \begin{itemize}
   \item jeden,
   \item dwa,
   \item trzy
 \end{itemize}
-Do powyższego wyliczenia dodajmy jeszcze wzór:
+
+\subsection{Dodatki i udogodnienia}
+
+Zapraszam do wypróbowania działania osiągniętego w ten sposób systemu składu.
+Dokument źródłowy wprowadzamy w \vsc{}.
+W procesie składu na jego podstawie generowany jest plik PDF, który można wyświetlić w oknie podglądu.
 \begin{align}
-  a & = 4+2x+\sin(y) \,,         \\
-  b & = 28 -3 x + \cos\alpha \,.
+  a & = 4+2x+\sin(y)         \\
+  b & = 28 -3 x + \cos\alpha
 \end{align}
 
-\subsection{Jeden} \lipsum{}
+Tu mamy listę wyliczaną
+\begin{itemize}
+  \item jeden,
+  \item dwa,
+  \item trzy
+\end{itemize}
 
-\subsection{Dwa} \lipsum{}
+\subsection{Dostosowanie zawartości kontenera do wymogu chwili}
 
-\section{Drugi} \lipsum{} \lipsum{}
+Zapraszam do wypróbowania działania osiągniętego w ten sposób systemu składu.
+Dokument źródłowy wprowadzamy w \vsc{}.
+W procesie składu na jego podstawie generowany jest plik PDF, który można wyświetlić w oknie podglądu.
+\begin{align}
+  a & = 4+2x+\sin(y)         \\
+  b & = 28 -3 x + \cos\alpha
+\end{align}
 
-\subsection{Jeden} \lipsum{}
-
-\subsection{Dwa} \lipsum{}
+Tu mamy listę wyliczaną
+\begin{itemize}
+  \item jeden,
+  \item dwa,
+  \item trzy
+\end{itemize}
 
 \end{document}

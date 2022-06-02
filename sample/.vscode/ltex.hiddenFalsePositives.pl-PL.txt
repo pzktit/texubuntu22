@@ -1,3 +1,12 @@
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QPiotr Zawadzki Kontenery i \\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+$"}
 {"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QTo przykładowy dokument ilustrujący skład dokumentu w języku polskim: jeden, dwa, trzy Do powyższego wyliczenia dodajmy jeszcze wzór: \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\Q\\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q to bardzo złożony system składu dokumentów, składający się z wielu współdziałających ze sobą aplikacji.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qto mechanizm, zaimplementowany w , dynamicznego tworzenia kontenerów Docker'a zawierających narzędzia potrzebne do pracy nad danym projektem.\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qto zaimplementowany w mechanizm dynamicznego tworzenia kontenerów Docker'a zawierających narzędzia potrzebne do pracy nad danym projektem.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QW katalogu .devcontainer znajduje się plik devcontainer.json zawierający przepis na utworzenie i konfigurację kontenera.\\E$"}
+{"rule":"MORFOLOGIK_RULE_PL_PL","sentence":"^\\QW katalogu .devcontainer znajduje się plik devcontainer.json zawierający przepis na utworzenie i konfigurację kontenera.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QWykorzystanie mechanizmu .\\E$"}
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qdo składu dokumentów.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QSam proces składu dokumentu bardzo przypomina kompilację programu, stąd pomysł, aby środowisko składu przygotować w ramach mechanizmu .\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QDokument źródłowy wprowadzamy w .\\E$"}
