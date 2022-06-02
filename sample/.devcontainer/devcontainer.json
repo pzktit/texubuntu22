@@ -33,6 +33,7 @@
 		"latex-workshop.synctex.afterBuild.enabled": true,
 		"latex-workshop.view.pdf.hand": true,
 		"latex-workshop.latex.recipe.default": "lastUsed",
+		"latex-workshop.latexindent.path": "",
 		// Language settings
 		"ltex.language": "pl-PL",
 		"ltex.ltex-ls.path": "/usr"

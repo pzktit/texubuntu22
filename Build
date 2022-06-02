@@ -1,2 +1,12 @@
 #!/bin/sh
+
+if [ ! -f ltex-ls-15.2.0-linux-x64.tar.gz ] ; then
+  wget https://github.com/valentjn/ltex-ls/releases/download/15.2.0/ltex-ls-15.2.0-linux-x64.tar.gz
+fi
+
+mkdir -p usr
+tar xf ltex-ls-15.2.0-linux-x64.tar.gz --strip-components=2 -C usr --exclude={*.md,*.xml}
+
 docker build  --build-arg VARIANT=ubuntu-22.04 -t pzawad/texubuntu22 .
+
+#rm -rf usr
