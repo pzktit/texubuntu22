@@ -9,4 +9,4 @@ tar xf ltex-ls-15.2.0-linux-x64.tar.gz --strip-components=2 -C usr --exclude={*.
 
 docker build  --build-arg VARIANT=ubuntu-22.04 -t pzawad/texubuntu22 .
 
-#rm -rf usr
+rm -rf usr
